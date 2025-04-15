@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+    
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title shown in the browser tab -->
+    <title>Tic-Tac-Toe Game</title>
+    
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Message container to display the winner or result -->
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <button id="new-btn">New Game</button>
+    </div>
+    
+    <main>
+      <!-- Game title -->
+      <h1>Tic Tac Toe</h1>
+      
+      <!-- Container for the game board -->
+      <div class="container">
+        <div class="game">
+          <!-- 9 buttons representing the 3x3 game board -->
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <!-- Button to reset the game -->
+      <button id="reset-btn">Reset Game</button>
+    </main>
+
+    <!-- Linking external JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>

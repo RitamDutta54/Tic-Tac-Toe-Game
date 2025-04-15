@@ -1,0 +1,91 @@
+/* Remove default margin and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the heading */
+h1 {
+  background-color: #051322; /* Dark background */
+  color: #fff; /* White text */
+  height: 5rem; /* Fixed height */
+  line-height: 5rem; /* Center text vertically */
+}
+
+/* Body styling */
+body {
+  background-color: #49baef; /* Light blue background */
+  text-align: center; /* Center align text */
+}
+
+/* Container to center the game board */
+.container {
+  height: 70vh; /* Take up 70% of the viewport height */
+  display: flex; /* Flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Game board styling */
+.game {
+  height: 60vmin; /* Responsive height */
+  width: 60vmin;  /* Responsive width */
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap in rows */
+  justify-content: center; /* Center the boxes */
+  align-items: center;
+  gap: 1.5vmin; /* Space between boxes */
+}
+
+/* Individual box styling */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem; /* Rounded corners */
+  border: none; /* Remove default button border */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* Drop shadow */
+  font-size: 8vmin; /* Large text for X or O */
+  color: #5f0502; /* Dark red text color */
+  background-color: #ffffc7; /* Light yellow background */
+}
+
+/* Reset button styling */
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913; /* Dark background */
+  color: #fff; /* White text */
+  border-radius: 1rem;
+  border: none;
+}
+
+/* New game button styling (same as reset) */
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+/* Message text style (e.g., Winner!) */
+#msg {
+  color: #ffffc7; /* Light yellow text */
+  font-size: 5vmin; /* Responsive font size */
+}
+
+/* Message container that appears when game ends */
+.msg-container {
+  height: 100vmin; /* Full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack message and button vertically */
+  gap: 4rem; /* Space between elements */
+}
+
+/* Hide element using display none */
+.hide {
+  display: none;
+}
